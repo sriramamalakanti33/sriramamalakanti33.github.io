@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sri Ram Amalakanti · Entry-level developer & product builder</title>
+<meta name="description" content="Sri Ram Amalakanti: B.Tech CSE (Cybersecurity), React and Node.js builder, ready to start a career in software development, product development or design.">
+<style>
+:root{--bg:#f5f6fb;--ink:#12162b;--mute:#4d5373;--card:#ffffff;--line:#d9ddf0;--acc:#3a4bdc;--acc2:#0b8f76;--glow:rgba(58,75,220,.14);--net:58,75,220;
+color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1226;--ink:#eef1ff;--mute:#a4abd0;--card:#151b36;--line:#2a3262;--acc:#8b98ff;--acc2:#4fe3c1;--glow:rgba(139,152,255,.16);--net:139,152,255;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d1226;--ink:#eef1ff;--mute:#a4abd0;--card:#151b36;--line:#2a3262;--acc:#8b98ff;--acc2:#4fe3c1;--glow:rgba(139,152,255,.16);--net:139,152,255;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+h1,h2,h3{font-family:ui-serif,Georgia,"Times New Roman",serif;line-height:1.1;margin:0;letter-spacing:-.01em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.logo{font-family:ui-serif,Georgia,serif;font-weight:700;text-decoration:none;font-size:1.1rem}
+nav{display:flex;gap:4px;align-items:center;overflow-x:auto;scrollbar-width:none}
+nav a{padding:6px 11px;border-radius:99px;text-decoration:none;font-size:.9rem;color:var(--mute);white-space:nowrap}
+nav a:hover,nav a.on{background:var(--glow);color:var(--ink)}
+#theme{border:1px solid var(--line);background:var(--card);color:var(--ink);width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:1rem;flex:none}
+.hero{position:relative;min-height:calc(100svh - 60px);display:flex;align-items:center;padding:56px 0;overflow:hidden}
+#net{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.hero .wrap{position:relative;z-index:1}
+.pill{display:inline-flex;align-items:center;gap:9px;padding:7px 14px;border:1px solid var(--line);background:var(--card);border-radius:99px;font-size:.9rem;color:var(--mute)}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--acc2);box-shadow:0 0 0 0 var(--acc2);animation:ping 2s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 10px transparent}100%{box-shadow:0 0 0 0 transparent}}
+h1{font-size:clamp(2.6rem,9vw,6rem);margin:22px 0 14px;font-weight:700}
+h1 span{display:inline-block;opacity:0;transform:translateY(24px);animation:rise .8s cubic-bezier(.2,.8,.2,1) forwards}
+h1 span:nth-child(2){animation-delay:.15s}h1 span:nth-child(3){animation-delay:.3s}
+@keyframes rise{to{opacity:1;transform:none}}
+.role{font-size:clamp(1.15rem,3.2vw,1.7rem);min-height:2.4em;max-width:30ch}
+.role b{color:var(--acc);font-weight:600;border-right:3px solid var(--acc);padding-right:4px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{border-color:transparent}}
+.lead{max-width:56ch;color:var(--mute);margin:10px 0 26px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:12px;border:1px solid var(--line);background:var(--card);text-decoration:none;font-weight:600;font-size:.98rem;cursor:pointer;color:var(--ink);font-family:inherit;transition:transform .15s,border-color .15s}
+.btn:hover{transform:translateY(-2px);border-color:var(--acc)}
+.btn.p{background:var(--acc);border-color:var(--acc);color:var(--bg)}
+section{padding:84px 0 0}
+h2{font-size:clamp(1.9rem,5vw,2.9rem);margin-bottom:12px}
+.sub{color:var(--mute);max-width:60ch;margin:0 0 30px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:-34px;position:relative;z-index:2}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.stat strong{display:block;font:700 2.4rem/1 ui-serif,Georgia,serif;color:var(--acc)}
+.stat span{color:var(--mute);font-size:.92rem}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.card h3{font-size:1.25rem;margin-bottom:8px}
+.card p{margin:0;color:var(--mute);font-size:.98rem}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.tabs button{font:inherit;font-size:.95rem;padding:9px 16px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--acc);border-color:var(--acc);color:var(--bg)}
+.panel{display:none;flex-wrap:wrap;gap:10px}
+.panel.on{display:flex}
+.chip{padding:9px 15px;border-radius:10px;background:var(--card);border:1px solid var(--line);font-weight:500;transition:transform .15s,background .15s}
+.chip:hover{transform:translateY(-3px) rotate(-1deg);background:var(--glow)}
+.note{width:100%;color:var(--mute);font-size:.95rem;margin:6px 0 0}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:12px;overflow:hidden}
+summary{list-style:none;cursor:pointer;padding:20px 22px;display:flex;justify-content:space-between;gap:14px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary h3{font-size:1.3rem}
+summary small{display:block;color:var(--mute);font:400 .93rem/1.4 ui-sans-serif,system-ui,sans-serif;margin-top:4px}
+summary i{font-style:normal;width:30px;height:30px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;flex:none;transition:transform .25s,background .25s}
+details[open] summary i{transform:rotate(45deg);background:var(--glow)}
+.body{padding:0 22px 22px;color:var(--mute)}
+.body ul{margin:0 0 14px;padding-left:20px}
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tags span{font-size:.82rem;padding:4px 10px;border-radius:99px;background:var(--glow);color:var(--ink)}
+.repos{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:26px}
+.repo{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;transition:transform .15s,border-color .15s}
+.repo:hover{transform:translateY(-3px);border-color:var(--acc)}
+.repo b{display:block;font-size:1.02rem;word-break:break-word}
+.repo p{margin:6px 0 12px;color:var(--mute);font-size:.92rem}
+.repo em{font-style:normal;font-size:.85rem;color:var(--mute);display:flex;align-items:center;gap:7px}
+.repo em::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--lc,var(--acc))}
+.more{margin-top:18px}
+.line{position:relative;margin:0;padding:0 0 0 26px;list-style:none;border-left:2px solid var(--line)}
+.line li{position:relative;padding:0 0 26px}
+.line li::before{content:"";position:absolute;left:-35px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--acc)}
+.line li.next::before{background:var(--acc2);border-color:var(--acc2)}
+.line time{font-size:.88rem;color:var(--acc);font-weight:600}
+.line h3{font-size:1.2rem;margin:2px 0 4px}.line p{margin:0;color:var(--mute);font-size:.96rem}
+.final{margin:84px 0 0;padding:50px 0 60px;border-top:1px solid var(--line);background:linear-gradient(180deg,var(--glow),transparent)}
+.final h2{max-width:18ch}
+.toast{display:inline-block;margin-left:10px;color:var(--acc2);font-weight:600;opacity:0;transition:opacity .2s}
+.toast.on{opacity:1}
+footer{padding:22px 0 40px;color:var(--mute);font-size:.9rem}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}h1 span{opacity:1;transform:none}}
+@media (max-width:640px){nav a:not(.keep){display:none}.hero{padding-top:36px}.stats{margin-top:-20px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#top">Sri Ram</a>
+<nav aria-label="Sections"><a href="#about" class="keep">About</a><a href="#skills" class="keep">Skills</a><a href="#work" class="keep">Projects</a><a href="#path">Journey</a><a href="#goal">Goals</a><a href="#contact" class="keep">Contact</a></nav>
+<button id="theme" aria-label="Switch light or dark theme" title="Switch theme">◐</button>
+</div></header>
+
+<main id="top">
+<div class="hero">
+<canvas id="net" aria-hidden="true"></canvas>
+<div class="wrap">
+<span class="pill"><i class="dot"></i>Open to entry-level roles · Hyderabad</span>
+<h1 aria-label="Sri Ram Amalakanti"><span>Sri</span> <span>Ram</span> <span>Amalakanti</span></h1>
+<div class="role" aria-live="off">I’m ready to start my career as a <b id="typed">full-stack developer</b></div>
+<p class="lead">B.Tech in Computer Science with a cybersecurity specialization. I build things with React and Node.js, I explain them clearly (I taught for 21 months), and I’m looking for a team where I can ship real product from day one.</p>
+<div class="cta">
+<a class="btn p" href="mailto:sriramamalakanti369@gmail.com">Email me</a>
+<a class="btn" href="https://github.com/sriramamalakanti33" target="_blank" rel="noopener">GitHub</a>
+<a class="btn" href="https://linkedin.com/in/sriram-amalakanti-648567215" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+</div>
+</div>
+
+<div class="wrap">
+<div class="stats" id="stats">
+<div class="stat"><strong data-n="200" data-s="+">0</strong><span>HR contacts verified with a tool I built</span></div>
+<div class="stat"><strong data-n="50" data-s="+">0</strong><span>companies covered by that tool</span></div>
+<div class="stat"><strong data-n="2" data-s="">0</strong><span>internships at IIIT-Hyderabad</span></div>
+<div class="stat"><strong data-n="21" data-s=" mo">0</strong><span>teaching engineering students</span></div>
+</div>
+
+<section id="about">
+<h2>Builder first, always learning</h2>
+<p class="sub">I started in cybersecurity, moved into teaching, and now work in technical recruiting, which gives me a rare view of what engineering teams actually look for. My goal is simple: become a strong full-stack engineer who thinks like a product person.</p>
+<div class="grid3">
+<div class="card"><h3>I build to learn</h3><p>VitaFlow, StoryVerse and EduIntel CRM all started as problems I wanted to solve. I plan the data, the roles and the rules before writing code.</p></div>
+<div class="card"><h3>I communicate clearly</h3><p>Three years in Toastmasters and two years in a classroom taught me to explain complex ideas simply, which makes me easy to work with in a team.</p></div>
+<div class="card"><h3>I take initiative</h3><p>I coordinated the Cybercrew cybersecurity club, volunteered with NSS and taught programming to students on my own time.</p></div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills I use</h2>
+<p class="sub">Choose a group to see what I work with. Hover a chip, it moves.</p>
+<div class="tabs" role="tablist" aria-label="Skill groups">
+<button role="tab" aria-selected="true" aria-controls="p0" id="t0">Frontend</button>
+<button role="tab" aria-selected="false" aria-controls="p1" id="t1" tabindex="-1">Backend & data</button>
+<button role="tab" aria-selected="false" aria-controls="p2" id="t2" tabindex="-1">Foundations</button>
+<button role="tab" aria-selected="false" aria-controls="p3" id="t3" tabindex="-1">Exploring now</button>
+</div>
+<div class="panel on" id="p0" role="tabpanel" aria-labelledby="t0"><span class="chip">React.js</span><span class="chip">JavaScript</span><span class="chip">HTML & CSS</span><span class="chip">Tailwind CSS</span><span class="chip">Responsive UI</span><p class="note">Built a production-style React internship project: the NEP School Complex Digitization at IIIT-Hyderabad.</p></div>
+<div class="panel" id="p1" role="tabpanel" aria-labelledby="t1"><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">TypeScript</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">REST APIs</span><p class="note">Designing schemas around real rules, such as donation cooldowns, request routing and audit history.</p></div>
+<div class="panel" id="p2" role="tabpanel" aria-labelledby="t2"><span class="chip">Data Structures</span><span class="chip">Problem solving</span><span class="chip">Python</span><span class="chip">Java</span><span class="chip">Secure coding</span><span class="chip">Cybersecurity basics</span><span class="chip">Git & GitHub</span><p class="note">Taught Data Structures and Engineering Mathematics; completed a HackerRank Python series up to dynamic programming.</p></div>
+<div class="panel" id="p3" role="tabpanel" aria-labelledby="t3"><span class="chip">Generative AI</span><span class="chip">Agentic AI</span><span class="chip">Product thinking</span><span class="chip">UX design</span><p class="note">I learn fast by building, and I’m actively seeking mentors to guide my first steps.</p></div>
+</section>
+
+<section id="work">
+<h2>Things I’ve built</h2>
+<p class="sub">Open a project to see what it does and what I used. Everything on GitHub is linked below.</p>
+<details open><summary><div><h3>VitaFlow: blood supply network</h3><small>Connects hospitals, blood banks and donors across India. In progress, my flagship.</small></div><i>+</i></summary>
+<div class="body"><ul><li>Hospital requests go to the nearest blood bank first, then move on after a 10-minute timeout.</li><li>Tracks unit expiry, test reports, donor history and a 90-day donation cooldown.</li><li>Backend, blood bank dashboard and frontend are largely done; donor, hospital and admin panels are next.</li></ul><div class="tags"><span>React</span><span>Node.js</span><span>Express</span><span>TypeScript</span><span>MongoDB</span></div></div></details>
+<details><summary><div><h3>K_Hub_IIIT: dietary tracking app</h3><small>A full-stack web app for logging and analyzing dietary preferences.</small></div><i>+</i></summary>
+<div class="body"><ul><li>User authentication, a REST API and a responsive interface.</li><li>Built with the MERN stack, and the code is public on GitHub.</li></ul><div class="tags"><span>React</span><span>Node.js</span><span>MongoDB</span><span>REST APIs</span></div><p style="margin:14px 0 0"><a href="https://github.com/sriramamalakanti33/K_Hub_IIIT" target="_blank" rel="noopener">View K_Hub_IIIT on GitHub</a></p></div></details>
+<details><summary><div><h3>StoryVerse: community storytelling</h3><small>A product vision with interest-based regional discovery.</small></div><i>+</i></summary>
+<div class="body"><ul><li>Long-running product thinking: pitch deck, positioning and feature brainstorming.</li><li>Shows I care about the “why” behind software, not only the code.</li></ul><div class="tags"><span>Product strategy</span><span>Pitch deck</span><span>Community design</span></div></div></details>
+<details><summary><div><h3>EduIntel CRM</h3><small>A private dashboard to manage and search college, faculty and company contacts.</small></div><i>+</i></summary>
+<div class="body"><ul><li>Searchable data across colleges, departments, faculty and companies.</li><li>Grew out of an earlier prototype, EdConnect, after I improved the data model.</li></ul><div class="tags"><span>React</span><span>Tailwind CSS</span><span>Node.js</span><span>PostgreSQL</span></div></div></details>
+<details><summary><div><h3>HR Contact Verifier Pro</h3><small>A browser-based tool that verified 200+ HR contacts across 50+ companies.</small></div><i>+</i></summary>
+<div class="body"><ul><li>Born from a real outreach campaign of 1,600+ contacts, so it solves a problem I lived.</li></ul><div class="tags"><span>Browser tool</span><span>Data validation</span></div></div></details>
+<h3 style="margin-top:34px">More on my GitHub</h3>
+<div class="repos">
+<a class="repo" style="--lc:#f1e05a" href="https://github.com/sriramamalakanti33/K_Hub_IIIT" target="_blank" rel="noopener"><b>K_Hub_IIIT</b><p>Full-stack dietary tracking web app.</p><em>JavaScript</em></a>
+<a class="repo" style="--lc:#e34c26" href="https://github.com/sriramamalakanti33/k_hub_tasks" target="_blank" rel="noopener"><b>k_hub_tasks</b><p>Task work from the K Hub program.</p><em>HTML</em></a>
+<a class="repo" style="--lc:#563d7c" href="https://github.com/sriramamalakanti33/Password-Strength-Checker" target="_blank" rel="noopener"><b>Password-Strength-Checker</b><p>Rates password strength in real time from length, character variety and common patterns.</p><em>HTML, CSS, JavaScript</em></a>
+<a class="repo" style="--lc:#b07219" href="https://github.com/sriramamalakanti33/PasswordGenerator" target="_blank" rel="noopener"><b>PasswordGenerator</b><p>A password generator written in Java.</p><em>Java</em></a>
+<a class="repo" style="--lc:#3572a5" href="https://github.com/sriramamalakanti33/PyLoggy" target="_blank" rel="noopener"><b>PyLoggy</b><p>A small Python logging project.</p><em>Python</em></a>
+</div>
+<p class="more"><a class="btn" href="https://github.com/sriramamalakanti33?tab=repositories" target="_blank" rel="noopener">See all 18 repositories</a></p>
+</section>
+
+<section id="path">
+<h2>My path so far</h2>
+<p class="sub">Every step added a skill I’ll bring to my first engineering role.</p>
+<ol class="line">
+<li><time>2020 – 2024</time><h3>B.Tech, CSE (Cybersecurity)</h3><p>KIET, JNTU-Kakinada · CGPA 7.12</p></li>
+<li><time>Jul – Aug 2023 · Aug 2023 – Apr 2024</time><h3>Two internships at IIIT-Hyderabad</h3><p>Cybersecurity research, then React.js developer on the NEP School Complex Digitization project.</p></li>
+<li><time>Aug 2024 – Apr 2026</time><h3>Assistant Professor and Class Teacher, KIET</h3><p>Taught Engineering Mathematics and Data Structures, and mentored students.</p></li>
+<li><time>Jul 2026 – now</time><h3>Trainee Technical Recruiter, Saxon Global</h3><p>Learning how IT teams hire, which skills matter and how products get staffed.</p></li>
+<li class="next"><time>Next</time><h3>My first role in development</h3><p>Where I turn everything above into shipped product.</p></li>
+</ol>
+</section>
+
+<section id="goal">
+<h2>What I’m looking for</h2>
+<p class="sub">An entry-level role where I can learn from strong engineers and contribute quickly.</p>
+<div class="grid3">
+<div class="card"><h3>Software developer</h3><p>Full-stack work with React and Node.js, and APIs and databases that real users depend on.</p></div>
+<div class="card"><h3>Product development</h3><p>Turning user problems into features, with an eye on data, rules and edge cases.</p></div>
+<div class="card"><h3>Design-minded roles</h3><p>Interface and UX work where clear, friendly design is part of the engineering.</p></div>
+</div>
+<p class="sub" style="margin-top:22px">I speak Telugu and English, and I’m comfortable in Hyderabad or remote teams.</p>
+</section>
+</div>
+
+<div class="final" id="contact"><div class="wrap">
+<h2>Let’s build something together.</h2>
+<p class="sub">If you have a junior or trainee opening, I’d love to show you how fast I learn.</p>
+<div class="cta">
+<a class="btn p" href="mailto:sriramamalakanti369@gmail.com">sriramamalakanti369@gmail.com</a>
+<button class="btn" id="copy" type="button">Copy email</button><span class="toast" id="toast" role="status">Copied</span>
+</div>
+</div></div>
+</main>
+<footer><div class="wrap">Sri Ram Amalakanti · Hyderabad, India</div></footer>
+
+<script>
+(function(){
+var root=document.documentElement,reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+// theme
+var tb=document.getElementById('theme');
+tb.onclick=function(){var dark=getComputedStyle(root).colorScheme==='dark';root.setAttribute('data-theme',dark?'light':'dark');setTimeout(readColor,30)};
+// typed roles
+var roles=['full-stack developer','product builder','UI-minded engineer','fast, curious learner'],ri=0,ci=0,del=false,el=document.getElementById('typed');
+function type(){var w=roles[ri];if(reduce){el.textContent=w;return}
+ci+=del?-1:1;el.textContent=w.slice(0,ci);var t=del?35:70;
+if(!del&&ci===w.length){del=true;t=1500}else if(del&&ci===0){del=false;ri=(ri+1)%roles.length;t=300}
+setTimeout(type,t)}type();
+// tabs
+var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+function pick(i){tabs.forEach(function(t,j){t.setAttribute('aria-selected',j===i);t.tabIndex=j===i?0:-1;document.getElementById('p'+j).classList.toggle('on',j===i)});tabs[i].focus()}
+tabs.forEach(function(t,i){t.onclick=function(){pick(i)};t.onkeydown=function(e){if(e.key==='ArrowRight')pick((i+1)%tabs.length);if(e.key==='ArrowLeft')pick((i+tabs.length-1)%tabs.length)}});
+// counters
+var counted=false;
+function count(){if(counted)return;counted=true;document.querySelectorAll('[data-n]').forEach(function(e){var n=+e.dataset.n,s=e.dataset.s,st=null;
+function f(ts){st=st||ts;var p=Math.min((ts-st)/1200,1);e.textContent=Math.round(n*(1-Math.pow(1-p,3)))+s;if(p<1)requestAnimationFrame(f)}
+if(reduce)e.textContent=n+s;else requestAnimationFrame(f)})}
+if('IntersectionObserver' in window){new IntersectionObserver(function(en,o){if(en[0].isIntersecting){count();o.disconnect()}},{threshold:.3}).observe(document.getElementById('stats'))}else count();
+// nav highlight
+var links=[].slice.call(document.querySelectorAll('nav a'));
+if('IntersectionObserver' in window){var so=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting)links.forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#'+x.target.id)})})},{rootMargin:'-40% 0px -55% 0px'});
+document.querySelectorAll('section,#contact').forEach(function(s){so.observe(s)})}
+// copy email
+document.getElementById('copy').onclick=function(){var t=document.getElementById('toast');
+function ok(){t.classList.add('on');setTimeout(function(){t.classList.remove('on')},1600)}
+try{navigator.clipboard.writeText('sriramamalakanti369@gmail.com').then(ok,function(){t.textContent='Select and copy the email above';ok()})}catch(e){t.textContent='Select and copy the email above';ok()}};
+// network canvas
+var cv=document.getElementById('net'),cx=cv.getContext('2d'),W=0,H=0,pts=[],mx=-999,my=-999,col='58,75,220',run=true,dpr=Math.min(window.devicePixelRatio||1,2);
+function readColor(){var c=getComputedStyle(root).getPropertyValue('--net').trim();if(c)col=c}
+readColor();
+function size(){var r=cv.getBoundingClientRect();W=r.width;H=r.height;cv.width=W*dpr;cv.height=H*dpr;cx.setTransform(dpr,0,0,dpr,0,0);
+var n=Math.min(90,Math.floor(W*H/14000));pts=[];for(var i=0;i<n;i++)pts.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35})}
+function draw(){cx.clearRect(0,0,W,H);
+for(var i=0;i<pts.length;i++){var p=pts[i];
+if(!reduce){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;
+var dx=mx-p.x,dy=my-p.y,d=Math.sqrt(dx*dx+dy*dy);if(d<150){p.x+=dx*.012;p.y+=dy*.012}}
+cx.fillStyle='rgba('+col+',.7)';cx.beginPath();cx.arc(p.x,p.y,2,0,6.3);cx.fill();
+for(var j=i+1;j<pts.length;j++){var q=pts[j],a=p.x-q.x,b=p.y-q.y,dd=a*a+b*b;if(dd<14000){cx.strokeStyle='rgba('+col+','+(.35*(1-dd/14000))+')';cx.beginPath();cx.moveTo(p.x,p.y);cx.lineTo(q.x,q.y);cx.stroke()}}
+var m=(mx-p.x)*(mx-p.x)+(my-p.y)*(my-p.y);if(m<22000){cx.strokeStyle='rgba('+col+','+(.6*(1-m/22000))+')';cx.beginPath();cx.moveTo(p.x,p.y);cx.lineTo(mx,my);cx.stroke()}}
+if(run&&!reduce)requestAnimationFrame(draw)}
+size();draw();
+window.addEventListener('resize',function(){size();if(reduce)draw()});
+cv.parentNode.addEventListener('pointermove',function(e){var r=cv.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top});
+cv.parentNode.addEventListener('pointerleave',function(){mx=my=-999});
+if('IntersectionObserver' in window){new IntersectionObserver(function(en){var v=en[0].isIntersecting;if(v&&!run){run=true;draw()}run=v}).observe(cv.parentNode)}
+})();
+</script>
+</body>
+</html>
