@@ -3,8 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Sri Ram Amalakanti · Entry-level developer & product builder</title>
-<meta name="description" content="Sri Ram Amalakanti: B.Tech CSE (Cybersecurity), React and Node.js builder, ready to start a career in software development, product development or design.">
+<title>Sri Ram Amalakanti | Aspiring Full-Stack Developer</title>
+<meta name="description" content="Sri Ram Amalakanti is an entry-level full-stack developer in Hyderabad. B.Tech CSE (Cybersecurity), React and Node.js projects, IIIT-Hyderabad internships and 21 months of teaching experience.">
+<meta name="theme-color" content="#0d1226">
+<link rel="canonical" href="https://sriramamalakanti33.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sri Ram Amalakanti | Aspiring Full-Stack Developer">
+<meta property="og:description" content="React and Node.js projects, IIIT-Hyderabad internships and a strong drive to start a career in software development.">
+<meta property="og:url" content="https://sriramamalakanti33.github.io/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Sri Ram Amalakanti","jobTitle":"Aspiring Full-Stack Developer","address":{"@type":"PostalAddress","addressLocality":"Hyderabad","addressCountry":"IN"},"sameAs":["https://github.com/sriramamalakanti33","https://linkedin.com/in/sriram-amalakanti-648567215"]}</script>
 <style>
 :root{--bg:#f5f6fb;--ink:#12162b;--mute:#4d5373;--card:#ffffff;--line:#d9ddf0;--acc:#3a4bdc;--acc2:#0b8f76;--glow:rgba(58,75,220,.14);--net:58,75,220;
 color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -16,6 +23,8 @@ body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 ui-sans-serif,
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
 h1,h2,h3{font-family:ui-serif,Georgia,"Times New Roman",serif;line-height:1.1;margin:0;letter-spacing:-.01em}
 a{color:inherit}
+.skip{position:absolute;left:-999px;top:8px;z-index:50;background:var(--acc);color:var(--bg);padding:10px 16px;border-radius:8px;text-decoration:none}
+.skip:focus{left:12px}
 :focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:6px}
 .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
@@ -35,8 +44,9 @@ h1{font-size:clamp(2.6rem,9vw,6rem);margin:22px 0 14px;font-weight:700}
 h1 span{display:inline-block;opacity:0;transform:translateY(24px);animation:rise .8s cubic-bezier(.2,.8,.2,1) forwards}
 h1 span:nth-child(2){animation-delay:.15s}h1 span:nth-child(3){animation-delay:.3s}
 @keyframes rise{to{opacity:1;transform:none}}
-.role{font-size:clamp(1.15rem,3.2vw,1.7rem);min-height:2.4em;max-width:30ch}
-.role b{color:var(--acc);font-weight:600;border-right:3px solid var(--acc);padding-right:4px;animation:blink 1s steps(1) infinite}
+.role{font-size:clamp(1.3rem,3.4vw,1.9rem);margin:0}
+.role b{color:var(--acc);font-weight:600}
+footer a{margin-right:16px}
 @keyframes blink{50%{border-color:transparent}}
 .lead{max-width:56ch;color:var(--mute);margin:10px 0 26px}
 .cta{display:flex;flex-wrap:wrap;gap:12px}
@@ -87,19 +97,24 @@ details[open] summary i{transform:rotate(45deg);background:var(--glow)}
 .line li.next::before{background:var(--acc2);border-color:var(--acc2)}
 .line time{font-size:.88rem;color:var(--acc);font-weight:600}
 .line h3{font-size:1.2rem;margin:2px 0 4px}.line p{margin:0;color:var(--mute);font-size:.96rem}
+.list{margin:0;padding:0;list-style:none}
+.list li{padding:12px 0;border-top:1px solid var(--line);color:var(--mute);font-size:.96rem}
+.list li:first-child{border-top:0;padding-top:0}
+.list b{display:block;color:var(--ink);font-weight:600}
 .final{margin:84px 0 0;padding:50px 0 60px;border-top:1px solid var(--line);background:linear-gradient(180deg,var(--glow),transparent)}
 .final h2{max-width:18ch}
 .toast{display:inline-block;margin-left:10px;color:var(--acc2);font-weight:600;opacity:0;transition:opacity .2s}
 .toast.on{opacity:1}
 footer{padding:22px 0 40px;color:var(--mute);font-size:.9rem}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}h1 span{opacity:1;transform:none}}
-@media (max-width:640px){nav a:not(.keep){display:none}.hero{padding-top:36px}.stats{margin-top:-20px}}
+@media (max-width:640px){.logo{display:none}nav{flex:1}.hero{padding-top:36px}.stats{margin-top:-20px}}
 </style>
 </head>
 <body>
+<a class="skip" href="#top">Skip to content</a>
 <header><div class="wrap">
 <a class="logo" href="#top">Sri Ram</a>
-<nav aria-label="Sections"><a href="#about" class="keep">About</a><a href="#skills" class="keep">Skills</a><a href="#work" class="keep">Projects</a><a href="#path">Journey</a><a href="#goal">Goals</a><a href="#contact" class="keep">Contact</a></nav>
+<nav aria-label="Sections"><a href="#about" class="keep">About</a><a href="#skills" class="keep">Skills</a><a href="#work" class="keep">Projects</a><a href="#path">Journey</a><a href="#more">Activities</a><a href="#goal">Goals</a><a href="#contact" class="keep">Contact</a></nav>
 <button id="theme" aria-label="Switch light or dark theme" title="Switch theme">◐</button>
 </div></header>
 
@@ -107,69 +122,68 @@ footer{padding:22px 0 40px;color:var(--mute);font-size:.9rem}
 <div class="hero">
 <canvas id="net" aria-hidden="true"></canvas>
 <div class="wrap">
-<span class="pill"><i class="dot"></i>Open to entry-level roles · Hyderabad</span>
+<span class="pill"><i class="dot"></i>Open to entry-level roles · Hyderabad · Remote</span>
 <h1 aria-label="Sri Ram Amalakanti"><span>Sri</span> <span>Ram</span> <span>Amalakanti</span></h1>
-<div class="role" aria-live="off">I’m ready to start my career as a <b id="typed">full-stack developer</b></div>
-<p class="lead">B.Tech in Computer Science with a cybersecurity specialization. I build things with React and Node.js, I explain them clearly (I taught for 21 months), and I’m looking for a team where I can ship real product from day one.</p>
+<p class="role">Aspiring <b>Full-Stack Developer</b></p>
+<p class="lead">I’m a Computer Science graduate (cybersecurity specialization) who builds web applications with React, Node.js and MongoDB. I gained hands-on experience through a React internship at IIIT-Hyderabad, and 21 months of teaching sharpened how I explain technical ideas. I’m looking for an entry-level developer role.</p>
 <div class="cta">
-<a class="btn p" href="mailto:sriramamalakanti369@gmail.com">Email me</a>
-<a class="btn" href="https://github.com/sriramamalakanti33" target="_blank" rel="noopener">GitHub</a>
-<a class="btn" href="https://linkedin.com/in/sriram-amalakanti-648567215" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn p" href="#work">View projects</a>
+<a class="btn" href="mailto:sriramamalakanti369@gmail.com">Email me</a>
+<a class="btn" href="https://github.com/sriramamalakanti33" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a class="btn" href="https://linkedin.com/in/sriram-amalakanti-648567215" target="_blank" rel="noopener noreferrer">LinkedIn</a>
 </div>
 </div>
 </div>
 
 <div class="wrap">
 <div class="stats" id="stats">
-<div class="stat"><strong data-n="200" data-s="+">0</strong><span>HR contacts verified with a tool I built</span></div>
-<div class="stat"><strong data-n="50" data-s="+">0</strong><span>companies covered by that tool</span></div>
-<div class="stat"><strong data-n="2" data-s="">0</strong><span>internships at IIIT-Hyderabad</span></div>
-<div class="stat"><strong data-n="21" data-s=" mo">0</strong><span>teaching engineering students</span></div>
+<div class="stat"><strong data-n="2" data-s="">2</strong><span>internships at IIIT-Hyderabad</span></div>
+<div class="stat"><strong data-n="21" data-s="">21</strong><span>months as Assistant Professor and Class Teacher</span></div>
+<div class="stat"><strong data-n="18" data-s="">18</strong><span>public repositories on GitHub</span></div>
 </div>
 
 <section id="about">
-<h2>Builder first, always learning</h2>
-<p class="sub">I started in cybersecurity, moved into teaching, and now work in technical recruiting, which gives me a rare view of what engineering teams actually look for. My goal is simple: become a strong full-stack engineer who thinks like a product person.</p>
+<h2>Developer mindset, product thinking</h2>
+<p class="sub">My journey spans cybersecurity, a React internship, teaching and technical recruiting. Recruiting shows me what engineering teams look for, and my goal now is to work as a full-stack developer who builds with the user in mind.</p>
 <div class="grid3">
-<div class="card"><h3>I build to learn</h3><p>VitaFlow, StoryVerse and EduIntel CRM all started as problems I wanted to solve. I plan the data, the roles and the rules before writing code.</p></div>
-<div class="card"><h3>I communicate clearly</h3><p>Three years in Toastmasters and two years in a classroom taught me to explain complex ideas simply, which makes me easy to work with in a team.</p></div>
-<div class="card"><h3>I take initiative</h3><p>I coordinated the Cybercrew cybersecurity club, volunteered with NSS and taught programming to students on my own time.</p></div>
+<div class="card"><h3>I build practical applications</h3><p>VitaFlow, K_Hub_IIIT and EduIntel CRM each began with a real problem. I plan the data model, user roles and rules before writing code.</p></div>
+<div class="card"><h3>I communicate clearly</h3><p>Toastmasters International (Jan 2021 – Jan 2024) and 21 months of teaching at KIET taught me to explain technical ideas clearly, which helps in code reviews and teamwork.</p></div>
+<div class="card"><h3>I take initiative</h3><p>I served as Assistant Club Faculty Coordinator for the Cybercrew cybersecurity club (2025–2026), volunteered with NSS and informally taught programming to students.</p></div>
 </div>
 </section>
 
 <section id="skills">
 <h2>Skills I use</h2>
-<p class="sub">Choose a group to see what I work with. Hover a chip, it moves.</p>
+<p class="sub">Technologies I have used in projects and internships.</p>
 <div class="tabs" role="tablist" aria-label="Skill groups">
 <button role="tab" aria-selected="true" aria-controls="p0" id="t0">Frontend</button>
 <button role="tab" aria-selected="false" aria-controls="p1" id="t1" tabindex="-1">Backend & data</button>
 <button role="tab" aria-selected="false" aria-controls="p2" id="t2" tabindex="-1">Foundations</button>
 <button role="tab" aria-selected="false" aria-controls="p3" id="t3" tabindex="-1">Exploring now</button>
 </div>
-<div class="panel on" id="p0" role="tabpanel" aria-labelledby="t0"><span class="chip">React.js</span><span class="chip">JavaScript</span><span class="chip">HTML & CSS</span><span class="chip">Tailwind CSS</span><span class="chip">Responsive UI</span><p class="note">Built a production-style React internship project: the NEP School Complex Digitization at IIIT-Hyderabad.</p></div>
-<div class="panel" id="p1" role="tabpanel" aria-labelledby="t1"><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">TypeScript</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">REST APIs</span><p class="note">Designing schemas around real rules, such as donation cooldowns, request routing and audit history.</p></div>
-<div class="panel" id="p2" role="tabpanel" aria-labelledby="t2"><span class="chip">Data Structures</span><span class="chip">Problem solving</span><span class="chip">Python</span><span class="chip">Java</span><span class="chip">Secure coding</span><span class="chip">Cybersecurity basics</span><span class="chip">Git & GitHub</span><p class="note">Taught Data Structures and Engineering Mathematics; completed a HackerRank Python series up to dynamic programming.</p></div>
-<div class="panel" id="p3" role="tabpanel" aria-labelledby="t3"><span class="chip">Generative AI</span><span class="chip">Agentic AI</span><span class="chip">Product thinking</span><span class="chip">UX design</span><p class="note">I learn fast by building, and I’m actively seeking mentors to guide my first steps.</p></div>
+<div class="panel on" id="p0" role="tabpanel" aria-labelledby="t0"><span class="chip">React.js</span><span class="chip">JavaScript</span><span class="chip">HTML & CSS</span><span class="chip">Tailwind CSS</span><span class="chip">Responsive UI</span><p class="note">Worked on the NEP School Complex Digitization project during my React internship at IIIT-Hyderabad.</p></div>
+<div class="panel" id="p1" role="tabpanel" aria-labelledby="t1"><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">TypeScript</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">REST APIs</span><p class="note">Designing data models around real rules, such as donation cooldowns, request routing and audit history.</p></div>
+<div class="panel" id="p2" role="tabpanel" aria-labelledby="t2"><span class="chip">Data Structures</span><span class="chip">Problem solving</span><span class="chip">Python</span><span class="chip">Java</span><span class="chip">Secure coding</span><span class="chip">Cybersecurity basics</span><span class="chip">Git & GitHub</span><p class="note">Taught Data Structures and Engineering Mathematics for 21 months, and completed a HackerRank Python problem-solving series up to dynamic programming.</p></div>
+<div class="panel" id="p3" role="tabpanel" aria-labelledby="t3"><span class="chip">Generative AI</span><span class="chip">Agentic AI</span><span class="chip">Product thinking</span><span class="chip">UX design</span><p class="note">Currently exploring Generative AI and agentic AI, and building product and UX skills through my own projects.</p></div>
 </section>
 
 <section id="work">
-<h2>Things I’ve built</h2>
-<p class="sub">Open a project to see what it does and what I used. Everything on GitHub is linked below.</p>
-<details open><summary><div><h3>VitaFlow: blood supply network</h3><small>Connects hospitals, blood banks and donors across India. In progress, my flagship.</small></div><i>+</i></summary>
-<div class="body"><ul><li>Hospital requests go to the nearest blood bank first, then move on after a 10-minute timeout.</li><li>Tracks unit expiry, test reports, donor history and a 90-day donation cooldown.</li><li>Backend, blood bank dashboard and frontend are largely done; donor, hospital and admin panels are next.</li></ul><div class="tags"><span>React</span><span>Node.js</span><span>Express</span><span>TypeScript</span><span>MongoDB</span></div></div></details>
+<h2>Projects I’ve worked on</h2>
+<p class="sub">Selected projects with their purpose, status and technology. Public repositories are linked below.</p>
+<details open><summary><div><h3>VitaFlow: blood supply network</h3><small>Web platform connecting hospitals, blood banks and donors in India. Status: in development, not deployed yet.</small></div><i>+</i></summary>
+<div class="body"><ul><li><b>Problem:</b> Coordinating blood requests between hospitals, blood banks and donors.</li><li><b>Design:</b> A request goes to the nearest blood bank first and moves to the next one after a 10-minute timeout. The data model tracks unit expiry, test reports, donation history and a 90-day donor cooldown.</li><li><b>Built so far:</b> Backend, blood bank dashboard and main frontend.</li><li><b>Still to build:</b> Donor, hospital and admin panels.</li></ul><div class="tags"><span>React</span><span>Node.js</span><span>Express</span><span>TypeScript</span><span>MongoDB</span></div></div></details>
 <details><summary><div><h3>K_Hub_IIIT: dietary tracking app</h3><small>A full-stack web app for logging and analyzing dietary preferences.</small></div><i>+</i></summary>
 <div class="body"><ul><li>User authentication, a REST API and a responsive interface.</li><li>Built with the MERN stack, and the code is public on GitHub.</li></ul><div class="tags"><span>React</span><span>Node.js</span><span>MongoDB</span><span>REST APIs</span></div><p style="margin:14px 0 0"><a href="https://github.com/sriramamalakanti33/K_Hub_IIIT" target="_blank" rel="noopener">View K_Hub_IIIT on GitHub</a></p></div></details>
-<details><summary><div><h3>StoryVerse: community storytelling</h3><small>A product vision with interest-based regional discovery.</small></div><i>+</i></summary>
-<div class="body"><ul><li>Long-running product thinking: pitch deck, positioning and feature brainstorming.</li><li>Shows I care about the “why” behind software, not only the code.</li></ul><div class="tags"><span>Product strategy</span><span>Pitch deck</span><span>Community design</span></div></div></details>
-<details><summary><div><h3>EduIntel CRM</h3><small>A private dashboard to manage and search college, faculty and company contacts.</small></div><i>+</i></summary>
-<div class="body"><ul><li>Searchable data across colleges, departments, faculty and companies.</li><li>Grew out of an earlier prototype, EdConnect, after I improved the data model.</li></ul><div class="tags"><span>React</span><span>Tailwind CSS</span><span>Node.js</span><span>PostgreSQL</span></div></div></details>
-<details><summary><div><h3>HR Contact Verifier Pro</h3><small>A browser-based tool that verified 200+ HR contacts across 50+ companies.</small></div><i>+</i></summary>
-<div class="body"><ul><li>Born from a real outreach campaign of 1,600+ contacts, so it solves a problem I lived.</li></ul><div class="tags"><span>Browser tool</span><span>Data validation</span></div></div></details>
+<details><summary><div><h3>StoryVerse: community storytelling</h3><small>Product concept: interest-based and regional story discovery. Not a built application.</small></div><i>+</i></summary>
+<div class="body"><ul><li>A concept and product-design project: pitch deck, positioning and feature planning.</li><li>Shows how I think about users and product before building.</li></ul><div class="tags"><span>Product strategy</span><span>Pitch deck</span><span>Community design</span></div></div></details>
+<details><summary><div><h3>EduIntel CRM</h3><small>Dashboard to manage and search college, faculty and company contacts. The repository is private.</small></div><i>+</i></summary>
+<div class="body"><ul><li>Searchable data across colleges, departments, faculty and companies.</li><li>Rebuilt from an earlier prototype, EdConnect. I can demonstrate it on request.</li></ul><div class="tags"><span>React</span><span>Tailwind CSS</span><span>Node.js</span><span>PostgreSQL</span></div></div></details>
+
 <h3 style="margin-top:34px">More on my GitHub</h3>
 <div class="repos">
 <a class="repo" style="--lc:#f1e05a" href="https://github.com/sriramamalakanti33/K_Hub_IIIT" target="_blank" rel="noopener"><b>K_Hub_IIIT</b><p>Full-stack dietary tracking web app.</p><em>JavaScript</em></a>
-<a class="repo" style="--lc:#e34c26" href="https://github.com/sriramamalakanti33/k_hub_tasks" target="_blank" rel="noopener"><b>k_hub_tasks</b><p>Task work from the K Hub program.</p><em>HTML</em></a>
-<a class="repo" style="--lc:#563d7c" href="https://github.com/sriramamalakanti33/Password-Strength-Checker" target="_blank" rel="noopener"><b>Password-Strength-Checker</b><p>Rates password strength in real time from length, character variety and common patterns.</p><em>HTML, CSS, JavaScript</em></a>
+<a class="repo" style="--lc:#e34c26" href="https://github.com/sriramamalakanti33/k_hub_tasks" target="_blank" rel="noopener"><b>k_hub_tasks</b><p>Task work for K Hub.</p><em>HTML</em></a>
+<a class="repo" style="--lc:#563d7c" href="https://github.com/sriramamalakanti33/Password-Strength-Checker" target="_blank" rel="noopener"><b>Password-Strength-Checker</b><p>A tool that checks how strong a password is.</p><em>HTML, CSS, JavaScript</em></a>
 <a class="repo" style="--lc:#b07219" href="https://github.com/sriramamalakanti33/PasswordGenerator" target="_blank" rel="noopener"><b>PasswordGenerator</b><p>A password generator written in Java.</p><em>Java</em></a>
 <a class="repo" style="--lc:#3572a5" href="https://github.com/sriramamalakanti33/PyLoggy" target="_blank" rel="noopener"><b>PyLoggy</b><p>A small Python logging project.</p><em>Python</em></a>
 </div>
@@ -181,22 +195,42 @@ footer{padding:22px 0 40px;color:var(--mute);font-size:.9rem}
 <p class="sub">Every step added a skill I’ll bring to my first engineering role.</p>
 <ol class="line">
 <li><time>2020 – 2024</time><h3>B.Tech, CSE (Cybersecurity)</h3><p>KIET, JNTU-Kakinada · CGPA 7.12</p></li>
-<li><time>Jul – Aug 2023 · Aug 2023 – Apr 2024</time><h3>Two internships at IIIT-Hyderabad</h3><p>Cybersecurity research, then React.js developer on the NEP School Complex Digitization project.</p></li>
-<li><time>Aug 2024 – Apr 2026</time><h3>Assistant Professor and Class Teacher, KIET</h3><p>Taught Engineering Mathematics and Data Structures, and mentored students.</p></li>
-<li><time>Jul 2026 – now</time><h3>Trainee Technical Recruiter, Saxon Global</h3><p>Learning how IT teams hire, which skills matter and how products get staffed.</p></li>
-<li class="next"><time>Next</time><h3>My first role in development</h3><p>Where I turn everything above into shipped product.</p></li>
+<li><time>Jul – Aug 2023</time><h3>Cybersecurity Research Intern, IIIT-Hyderabad</h3><p>Research internship in cybersecurity.</p></li>
+<li><time>Aug 2023 – Apr 2024</time><h3>React.js Developer Intern, IIIT-Hyderabad</h3><p>Raj Reddy Centre for Technology &amp; Society. Worked on the NEP School Complex Digitization project using React.js.</p></li>
+<li><time>Aug 2024 – Apr 2026 · 21 months</time><h3>Assistant Professor and Class Teacher, KIET</h3><p>Taught Engineering Mathematics (M1 and M2) and Data Structures, and mentored students as their class teacher.</p></li>
+<li><time>Jul 2026 – now</time><h3>Trainee Technical Recruiter, Saxon Global</h3><p>Supporting IT hiring while building my development skills and projects for a move into software engineering.</p></li>
+<li class="next"><time>Goal</time><h3>Entry-level developer role</h3><p>A team where I can contribute to real products and keep learning.</p></li>
 </ol>
+</section>
+
+<section id="more">
+<h2>Achievements and activities</h2>
+<p class="sub">Learning I have completed, and the clubs and communities where I developed leadership and communication skills.</p>
+<div class="grid3" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+<div class="card"><h3>Certifications and learning</h3><ul class="list">
+<li><b>NPTEL certifications</b>Cloud Computing and IoT</li>
+<li><b>Google for Developers, NEAT and AICTE</b>Virtual internships in AI/ML and Android Development</li>
+<li><b>Skillsoft course completion</b>Secure Coding in Java SE 11 Applications</li>
+<li><b>HackerRank Python series</b>Problem solving from strings to dynamic programming</li>
+</ul></div>
+<div class="card"><h3>Leadership and community</h3><ul class="list">
+<li><b>Cybercrew cybersecurity club, 2025–2026</b>Assistant Club Faculty Coordinator</li>
+<li><b>Toastmasters International, Jan 2021 – Jan 2024</b>Member: public speaking, stage management and networking</li>
+<li><b>National Service Scheme (NSS), Jan 2021 – Jan 2024</b>Volunteer</li>
+<li><b>Teaching and mentoring</b>Informally taught programming to 10th-class and college students and gave career guidance</li>
+</ul></div>
+</div>
 </section>
 
 <section id="goal">
 <h2>What I’m looking for</h2>
-<p class="sub">An entry-level role where I can learn from strong engineers and contribute quickly.</p>
+<p class="sub">Entry-level roles in software development, where I can learn from experienced engineers and contribute to real products.</p>
 <div class="grid3">
-<div class="card"><h3>Software developer</h3><p>Full-stack work with React and Node.js, and APIs and databases that real users depend on.</p></div>
-<div class="card"><h3>Product development</h3><p>Turning user problems into features, with an eye on data, rules and edge cases.</p></div>
-<div class="card"><h3>Design-minded roles</h3><p>Interface and UX work where clear, friendly design is part of the engineering.</p></div>
+<div class="card"><h3>Junior full-stack developer</h3><p>React, Node.js and databases, building APIs and features that real users depend on.</p></div>
+<div class="card"><h3>Frontend developer</h3><p>Responsive, accessible interfaces built with React and modern CSS.</p></div>
+<div class="card"><h3>Product-minded engineer</h3><p>Turning user problems into features, with attention to data, rules and edge cases.</p></div>
 </div>
-<p class="sub" style="margin-top:22px">I speak Telugu and English, and I’m comfortable in Hyderabad or remote teams.</p>
+<p class="sub" style="margin-top:22px">I speak Telugu and English, and I’m comfortable working in Hyderabad or in remote teams.</p>
 </section>
 </div>
 
@@ -209,20 +243,15 @@ footer{padding:22px 0 40px;color:var(--mute);font-size:.9rem}
 </div>
 </div></div>
 </main>
-<footer><div class="wrap">Sri Ram Amalakanti · Hyderabad, India</div></footer>
+<footer><div class="wrap"><a href="https://github.com/sriramamalakanti33" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://linkedin.com/in/sriram-amalakanti-648567215" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="mailto:sriramamalakanti369@gmail.com">Email</a><br>Sri Ram Amalakanti · Hyderabad, India</div></footer>
 
 <script>
 (function(){
 var root=document.documentElement,reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
 // theme
 var tb=document.getElementById('theme');
-tb.onclick=function(){var dark=getComputedStyle(root).colorScheme==='dark';root.setAttribute('data-theme',dark?'light':'dark');setTimeout(readColor,30)};
-// typed roles
-var roles=['full-stack developer','product builder','UI-minded engineer','fast, curious learner'],ri=0,ci=0,del=false,el=document.getElementById('typed');
-function type(){var w=roles[ri];if(reduce){el.textContent=w;return}
-ci+=del?-1:1;el.textContent=w.slice(0,ci);var t=del?35:70;
-if(!del&&ci===w.length){del=true;t=1500}else if(del&&ci===0){del=false;ri=(ri+1)%roles.length;t=300}
-setTimeout(type,t)}type();
+try{var sv=localStorage.getItem('theme');if(sv)root.setAttribute('data-theme',sv)}catch(e){}
+tb.onclick=function(){var dark=getComputedStyle(root).colorScheme==='dark',nt=dark?'light':'dark';root.setAttribute('data-theme',nt);try{localStorage.setItem('theme',nt)}catch(e){}setTimeout(readColor,30)};
 // tabs
 var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
 function pick(i){tabs.forEach(function(t,j){t.setAttribute('aria-selected',j===i);t.tabIndex=j===i?0:-1;document.getElementById('p'+j).classList.toggle('on',j===i)});tabs[i].focus()}
